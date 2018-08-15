@@ -2,19 +2,45 @@
 <link rel='stylesheet' href='css.css'>
 <main>
     <p class="header">M'Cat Clicker</p>
+    <section class='buttons'>
+        <button class='button1' onclick="toggleCat1()">Milton</button><br>
+        <button class='button2' onclick="toggleCat2()">Kevin</button><br>
+        <button class='button3' onclick='toggleCat3()'>Gilbert</button><br>
+        <button class='button4' onclick='toggleCat4()'>Angus</button><br>
+        <button class='button5' onclick="toggleCat5()">Brian</button><br>
+    </section>
     <section id='kitty'>
-        <div>     
-            <p class="subheader">(Click the cat)</p>
+        <div id='cat1' class='hidden'>     
+            <p class="subheader">This is Milton</p>
         <input type='image' src="images\fedora1.jpg" onclick="myCatClicker()" class='catPic'/>
-            <h1>Cats Clicked: </h1>
+            <h1>Miltons Clicked: </h1>
             <div id='counter'>0</div>
-            </div>
-        <div>
-        <p class="subheader">(Click the cat)</p>
+        </div>
+        <div id='cat2' class='hidden'>
+        <p class="subheader">This is Kevin</p>
         <input type='image' src="images\fedora2.jpg" onclick="myCatClicker2()" class='catPic'/>
-            <h1>Cats Clicked: </h1>
+            <h1>Kevins Clicked: </h1>
             <div id='counter2'>0</div>
-            </div>
+        </div>
+        <div id='cat3' class='hidden'>
+            <p class="subheader">This is Gilbert</p>
+            <input type='image' src="images\fedora3.jpg" onclick="myCatClicker3()" class='catPic'/>
+                <h1>Gilberts Clicked: </h1>
+                <div id='counter3'>0</div>
+        </div>
+        <div id='cat4' class='hidden'>
+            <p class="subheader">This is Angus</p>
+            <input type='image' src="images\fedora4.jpg" onclick="myCatClicker4()" class='catPic'/>
+                <h1>Angus' Clicked: </h1>
+                <div id='counter4'>0</div>
+        </div>
+        <div id='cat5' class='hidden'>
+            <p class="subheader">This is Brian</p>
+            <input type='image' src="images\fedora5.jpg" onclick="myCatClicker5()" class='catPic'/>
+                <h1>Brians Clicked: </h1>
+                <div id='counter5'>0</div>
+        </div>       
+
     </section>
 </main>
 <script src="cat.js"></script>
