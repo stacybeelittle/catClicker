@@ -1,10 +1,21 @@
 <body>
 <link rel='stylesheet' href='css.css'>
-<p class="header">M'Cat Clicker</p>
-<p class="subheader">(Click the cat)</p>
-<input type='image' src="images\fedora1.jpg" onclick="myCatClicker()" id='kitty'/>
-<h1>Cats Clicked: </h1>
-<div id='counter'>0</div>
-
+<main>
+    <p class="header">M'Cat Clicker</p>
+    <section id='kitty'>
+        <div>     
+            <p class="subheader">(Click the cat)</p>
+        <input type='image' src="images\fedora1.jpg" onclick="myCatClicker()" class='catPic'/>
+            <h1>Cats Clicked: </h1>
+            <div id='counter'>0</div>
+            </div>
+        <div>
+        <p class="subheader">(Click the cat)</p>
+        <input type='image' src="images\fedora2.jpg" onclick="myCatClicker2()" class='catPic'/>
+            <h1>Cats Clicked: </h1>
+            <div id='counter2'>0</div>
+            </div>
+    </section>
+</main>
 <script src="cat.js"></script>
 </body>
